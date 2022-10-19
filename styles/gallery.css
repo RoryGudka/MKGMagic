@@ -1,0 +1,23 @@
+.galHeading {
+    margin:0;
+    padding:20px 0;
+    font-size:58px;
+    color:white;
+    /*font-family: 'Great Vibes', cursive;*/
+    font-family: var(--headFont);
+    text-align:center;
+    background-color:grey;
+}
+
+.headingFade {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6));
+}
+
+.galHeadingP {
+    margin:0;
+}

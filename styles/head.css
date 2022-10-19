@@ -1,0 +1,221 @@
+/*
+General
+*/
+:root {
+    --baseFont: 'Gabriela', serif;
+    --headFont: 'Dancing Script', cursive;
+
+}
+* {
+    position: relative;
+}
+body {
+    margin:0;
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out 
+{
+    opacity: 0;
+    transition: none;
+}
+.clearStyle {
+    background-color:rgb(255,255,255,0.1);
+    border:2px solid white;
+    color:white;
+    transition:0.1s;
+}
+.clearStyle:hover {
+    background-color:rgb(255,255,255,0.2);
+    box-shadow: 0 0 3px 2px white;
+}
+
+
+
+
+
+
+/*
+Elements within the header
+*/
+.head {
+    height:50vh;
+    width:100vw;
+    overflow:hidden;
+    border-bottom: 5px black solid;
+}
+.headBackImg {
+    height:50vh;
+    width:100vw;
+    object-fit:cover;
+}
+.headBackImgTint {
+    position:absolute;
+    top:0;
+    left:0;
+    height:50vh;
+    width:100vw;
+    background-color: rgb(0,0,0, 0.20);
+}
+.headTitle {
+    position:absolute;
+    top:calc(25vh - 50px);
+    width:100%;
+    text-align:center;
+    font-size:100px;
+    line-height:100px;
+    font-family: var(--headFont);
+    color:#ffffff;
+}
+.headTitle P {
+    margin:0;
+}
+
+
+.tabWrapper {
+    position:absolute;
+    top:10px;
+    text-align:center;
+    width:100%;
+    margin-right:5px;
+}
+.startTab {
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+}
+.endTab {
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+}
+.tab {
+    font-size:18px;
+    background-color:rgb(0,0,0,0.5);
+    display:inline-block;
+    padding:15px 15px;
+    margin-right:-5px;
+    border:3px solid white;
+    user-select:none;
+}
+.tabTxt {
+    display:inline-block;
+    margin:0;
+    font-family: var(--baseFont);
+}
+.block {
+    position: absolute;
+    height: 65px;
+    background-image:linear-gradient(to bottom, rgb(0,0,0,0.45), rgb(0,0,0,0));
+    width:100%;
+    z-index: 1;
+}
+.everythingContainer {
+    overflow-x:hidden;
+}
+
+
+
+/* Footer */
+.footer {
+    height:90px;
+    background-image:linear-gradient(to bottom, rgb(20, 20, 20), rgb(40, 40, 40));
+    /*border-top:2px solid lightgrey;*/
+}
+.footer P, .footer A{
+    padding:1px;
+    margin:0;
+    color:lightgrey;
+    font-size:14px;
+    font-family:var(--baseFont);
+}
+.midWrap {
+    text-align:center;
+}
+.footContact {
+    top:20px;
+    position:absolute;
+    width:24%;
+    left:10%;
+}
+.footPageNav {
+    top:20px;
+    position:absolute;
+    width:24%;
+    left:38%;
+    text-align:center;
+}
+.footPageNav DIV {
+    display:inline-block;
+}
+.footPageNav A {
+    padding:3px;
+    display:block;
+}
+.footFeedback {
+    top:20px;
+    position:absolute;
+    width:24%;
+    right:10%;
+    text-align:right;
+}
+.footFeedback P, .footFeedback A {
+    padding:3px;
+}
+.comMethod {
+    padding-bottom:4px;
+}
+.icon {
+    display:inline-block;
+}
+.iconImg {
+    top:5px;
+    height:20px;
+}
+
+
+
+@media (max-aspect-ratio: 3/4) {
+    .tab {
+        padding:10px;
+    }
+    .tabTxt {
+        font-size:14px;
+    }
+    .headTitle {
+        font-size: 75px;
+        line-height:75px;
+        top:calc(25vh - 37.5px);
+    }
+    .footer {
+        height:auto;
+        padding-bottom:20px;
+    }
+    .footContact, .footPageNav, .footFeedback {
+        position:relative;
+        width:90%;
+        left:5%;
+        text-align:center;
+        padding-bottom:20px;
+    }
+}
+
+@media (max-height:500px) {
+    .footer P, .footer A {
+        font-size:12px;
+    }
+    .footContact {
+        left:2%;
+        width:30%;
+    }
+    .footPageNav {
+        width:35%;
+        left:32.5%;
+    }
+    .footFeedback {
+        right:2%;
+        width:30%;
+    }
+    .tab {
+        font-size:16px;
+        padding:12px;
+    }
+}

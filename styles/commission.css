@@ -1,0 +1,181 @@
+/*
+Form elements
+*/
+.commissionContent {
+    width:100%;
+}
+.comTxtWrapper {
+    text-align:center;
+    width:60%;
+    left:20%;
+    font-size:18px;
+    color:white;
+    font-family: var(--baseFont);
+    padding:20px 0;
+    padding-top:40px;
+}
+.commissionTxt {
+    margin:0;
+}
+.colorFade {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(0,0,0,0));
+}
+.commissionForm {
+    text-align:center;
+}
+.txtWrapper {
+    padding:10px 0;
+    text-align:left;
+    width:60%;
+    left:20%;
+}
+.commissionLbl {
+    display:block;
+    color:white;
+    font-size:18px;
+    font-family: var(--baseFont);
+    padding-bottom:5px;
+}
+#nameTxt {
+    display:block;
+    height:30px;
+    width:100%;
+    padding:0 10px;
+    width:calc(100% - 20px);
+    border-radius:10px;
+    text-align:left;
+    font-family: var(--baseFont);
+    outline:none;
+    font-size:16px;
+}
+.contactWrapper {
+    width: 60%;
+    left:20%;
+    text-align:left;
+}
+.emailTxtWrapper {
+    display:inline-block;
+    width:calc(50% - 43px);
+}
+.numberTxtWrapper {
+    display:inline-block;
+    width:calc(50% - 43px);
+}
+#emailTxt {
+    display:inline-block;
+    height:30px;
+    padding:0 10px;
+    width:100%;
+    border-radius:10px;
+    text-align:left;
+    font-family: var(--baseFont);
+    outline:none;
+    font-size:16px;
+}
+.contactPWrapper {
+    display:inline-block;
+    margin-left:30px;
+    margin-right:10px;
+    font-size:18px;
+    color:white;
+    font-family: var(--baseFont);
+}
+#numberTxt {
+    display:inline-block;
+    height:30px;
+    padding:0 10px;
+    width:100%;
+    border-radius:10px;
+    text-align:left;
+    font-family: var(--baseFont);
+    outline:none;
+    font-size:16px;
+}
+.multLineInput {
+    display:block;
+    height:120px;
+    padding:5px 10px;
+    width:calc(100% - 20px);
+    border-radius:10px;
+    text-align:left;
+    font-family: var(--baseFont);
+    outline:none;
+    font-size:16px;
+}
+.submitBtn {
+    display:inline-block;
+    width:150px;
+    height:40px;
+    font-size:20px;
+    border-radius:20px;
+    line-height:40px;
+    font-family: var(--baseFont);
+    margin-bottom:100px;
+    margin-top:10px;
+}
+
+
+/*PAGE COVER*/
+.pageCover {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    text-align:center;
+    opacity:0;
+    transition:0.2s;
+    font-family:var(--baseFont);
+    z-index:-1;
+}
+.pageCoverWrapper {
+    top:20%;
+    left:20%;
+    width:60%;
+}
+.pageCoverP {
+    font-size:20px;
+    color:white;
+}
+.pageCoverA {
+    top:20px;
+    font-size:20px;
+    color:lightblue;
+}
+.pageCoverA:visited {
+    color:lightblue;
+}
+
+
+
+/*
+Mobile Optimization When Vertical
+*/
+@media (max-aspect-ratio: 3/4) {
+    .emailTxtWrapper, .numberTxtWrapper {
+        display:block;
+        width: calc(100% - 20px);
+    } 
+    .contactPWrapper {
+        display:block;
+        text-align:center;
+        margin:0;
+    }
+    .contactP {
+        margin: 10px 0;
+    }
+    .comTxtWrapper {
+        width:80%;
+        left:10%;
+    }
+    .txtWrapper {
+        left:10%;
+        width:80%;
+    }
+    .contactWrapper {
+        width:80%;
+        left:10%;
+    }
+}
